@@ -1,14 +1,14 @@
 const TEAMS={
- W:{name:'TEAM W',players:'Hanif & Raissa',pdf:'assets/pdfs/team-w-botanic.pdf'},
- X:{name:'TEAM X',players:'Rafka & Naikei',pdf:'assets/pdfs/team-x-botanic.pdf'},
- Y:{name:'TEAM Y',players:'Dhani & Vanya',pdf:'assets/pdfs/team-y-botanic.pdf'},
- Z:{name:'TEAM Z',players:'Razzan & Nadia',pdf:'assets/pdfs/team-z-botanic.pdf'}
+ W:{name:'TEAM W',players:'Hanif & Raissa',pdf:'team-w-botanic.pdf'},
+ X:{name:'TEAM X',players:'Rafka & Naikei',pdf:'team-x-botanic.pdf'},
+ Y:{name:'TEAM Y',players:'Dhani & Vanya',pdf:'team-y-botanic.pdf'},
+ Z:{name:'TEAM Z',players:'Razzan & Nadia',pdf:'team-z-botanic.pdf'}
 };
 const ROUNDS=[
  {answer:'botanicgardens',title:'ROUND 1',pdf:t=>TEAMS[t].pdf,riddle:`Before the Lion City became what you see,\nI was already growing quietly.\nIn a forest of concrete, I remain green,\nA piece of another world hidden in between.\nNations have recognised the roots that I keep,\nYet you need no passport to wander this deep.\nWhere flowers are studied, preserved, and displayed,\nFind the living museum that time never made fade.`},
- {answer:'nationallibrary',title:'ROUND 2',pdf:()=> 'assets/pdfs/national-library.pdf',riddle:`I have many stories, but none are my own.\nI have many voices, yet speak in no tone.\nYou may travel centuries without leaving my walls,\nAnd meet a thousand minds without meeting them at all.\nI rise rather than stretch,\nKeeping knowledge high above the street.\nI belong to everyone,\nYet no one can call me theirs.`},
- {answer:'jewel',title:'ROUND 3',pdf:()=> 'assets/pdfs/jewel.pdf',riddle:`Where departures and arrivals surround me,\nI am a destination for those going nowhere.\nA forest grows where no forest should,\nBeneath a sky that isn't a sky.\nRain falls endlessly at my heart,\nYet checking the weather will do you no good.\nI am connected to flight,\nBut I never leave the ground.`},
- {answer:'changibeachpark',title:'FINAL ROUND',pdf:()=> 'assets/pdfs/changi-beach-park.pdf',riddle:`Leave the glass and waterfall behind,\nYour final stop is a different kind.\nTravel toward the island’s eastern shore,\nWhere city towers surround you no more.\nWatch the sea while planes pass through the sky,\nNear the airport where they land and fly.\nA seaside park shares its name\nWith the airport from which you came.`}
+ {answer:'nationallibrary',title:'ROUND 2',pdf:()=> 'national-library.pdf',riddle:`I have many stories, but none are my own.\nI have many voices, yet speak in no tone.\nYou may travel centuries without leaving my walls,\nAnd meet a thousand minds without meeting them at all.\nI rise rather than stretch,\nKeeping knowledge high above the street.\nI belong to everyone,\nYet no one can call me theirs.`},
+ {answer:'jewel',title:'ROUND 3',pdf:()=> 'jewel.pdf',riddle:`Where departures and arrivals surround me,\nI am a destination for those going nowhere.\nA forest grows where no forest should,\nBeneath a sky that isn't a sky.\nRain falls endlessly at my heart,\nYet checking the weather will do you no good.\nI am connected to flight,\nBut I never leave the ground.`},
+ {answer:'changibeachpark',title:'FINAL ROUND',pdf:()=> 'changi-beach-park.pdf',riddle:`Leave the glass and waterfall behind,\nYour final stop is a different kind.\nTravel toward the island’s eastern shore,\nWhere city towers surround you no more.\nWatch the sea while planes pass through the sky,\nNear the airport where they land and fly.\nA seaside park shares its name\nWith the airport from which you came.`}
 ];
 const app=document.querySelector('#app');
 const key=t=>`breakingNUS_${t}`;
